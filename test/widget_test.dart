@@ -37,4 +37,8 @@ void main() {
   test("Teste de conclusão", () {
     expect(isFinshed(), false);
   });
+
+  test("Teste de acertos perfeitos", () {
+    expect(totalCorrect, 5);
+  });
 }
