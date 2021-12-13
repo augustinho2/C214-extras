@@ -37,8 +37,12 @@ void main() {
   test("Teste de conclusão", () {
     expect(isFinshed(), false);
   });
-
-  test("Teste de acertos perfeitos", () {
-    expect(totalCorrect, 5);
+  test("Testa se há questões", () {
+    int tamanhoLista = questionsLength();
+    bool verificacao = false;
+    if (tamanhoLista > 0) {
+      verificacao = true;
+    }
+    expect(true, equals(verificacao));
   });
 }
